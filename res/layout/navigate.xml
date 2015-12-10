@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MapActivity" >
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapview_navi"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" >
+    </com.baidu.mapapi.map.MapView>
+
+    <!-- 按钮图层 -->
+
+    <RelativeLayout
+        android:id="@+id/thebuttons1"
+        android:layout_width="fill_parent"
+        android:layout_height="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/background_layout_bottom"
+            android:orientation="horizontal" >
+
+            <!-- 策略 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_button_l"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvStrategy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tvStrategy" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/line" />
+            <!-- 路径 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_button_c"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvCalcRoutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tvCalcRoutes" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:src="@drawable/line" />
+            <!-- 导航 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_button_r"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tvStartNavi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/tvStartNavi" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/DestName"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/et_destination"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/NaviInputHint"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+    <!-- 自定义缩放按钮 -->
+    <!-- "-"号按钮 -->
+
+    <Button
+        android:id="@+id/zoomout"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/thebuttons1"
+        android:layout_alignRight="@+id/thebuttons1"
+        android:background="@drawable/zoomout_seletor" />
+    <!-- "+"号按钮 -->
+
+    <Button
+        android:id="@+id/zoomin"
+        android:layout_width="35dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/zoomout"
+        android:layout_alignLeft="@+id/zoomout"
+        android:background="@drawable/zoomin_seletor" />
+
+    
+    <!-- 下一条路线 -->
+    <Button
+        android:id="@+id/nextline_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_marginTop="19dp"
+        android:text="下一条" />
+
+</RelativeLayout>

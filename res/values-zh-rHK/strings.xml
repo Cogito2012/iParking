@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- weather.xml部分 -->
+    <string name="btn">獲取天氣</string>
+    <color name="white">#FFFFFF</color>
+    <string name="inputcity"></string>
+    
+    <!-- 设置以及SOS一键报警部分 -->
+    <string name="setChoice">選擇設置</string>
+    <string name="language">語言設置</string>
+    <string name="sosNumber">sos號碼</string>
+    <string name="selfDefine">自定義</string>
+    <string name="strOK">確定</string>
+    <string name="strcancel">取消</string>
+    
+    <!-- 语言设置 -->
+    <string name="SimplifiedChinese">簡體中文</string>
+    <string name="TraditionalChinese">繁體中文</string>
+    <string name="English">英文</string>
+    <string name="Arabic">阿拉伯文</string>
+    
+    <!-- 登陆注册 -->
+    <string name="logon_label_username">帳號</string>  
+    <string name="logon_label_password">密碼</string>  
+    <string name="login_label_username">帳號</string>  
+    <string name="login_label_password">密碼</string>  
+    <string name="login_label_signin">登 錄</string> 
+    <string name="login_label_ok">確認</string> 
+    <string name="login_username_hint">郵箱/手機號</string>  
+    <string name="login_passwords_hint">長度至少6位</string>  
+    <string name="logon_label_licenseplate">車牌號</string>  
+    <string name="login_licenseplate_hint">如：鄂AUB888</string>  
+    
+    <string name="login_register_link">沒有帳號？ <a href="#" mce_href="#">注冊</a></string>
+    <string name="Remember">記住密碼</string>
+    <string name="register">注冊</string>    
+    <string name="PasswordsOK">確認密碼</string>
+    <string name="user_path">/sdcard/iParking/USER/</string>
+    <string name="NAME_path">/sdcard/iParking/USER/USER_NAME.txt</string>
+    <string name="PASS_path">/sdcard/iParking/USER/USER_PASS.txt</string>
+    
+    <!-- 个人主页 -->
+    <string name="title_bar_txt">個人信息</string>
+    <string name="imgHead">設置頭像</string>
+    <string name="back">返回</string>
+    <string name="nickname">昵稱:whuRSSR</string>
+    <string name="region">所在地</string>
+    <string name="wuhan">武漢市</string>
+    <string name="signature">個性簽名</string>
+    <string name="content">世界這么大，我想去看看</string>
+    <string name="carplate">車牌號</string>
+    <string name="mycarplate">鄂AUB888</string>
+    <string name="alipay">綁定支付寶</string>
+    <string name="myalipay">Ahaha</string>
+    <string name="telephone">手機</string>
+    <string name="phonenumber">13554051841</string>
+    <string name="mygallery">旅途相冊</string>
+    <string name="dispose">注銷</string>
+    
+    <string name="title_bar_deteil">詳情</string>
+    <string name="outsceen">外景</string>
+    <string name="reserve">預訂</string>
+    <string name="gothere">導航</string>
+    
+    <string name="DestName">目的地：</string>
+    <string name="NaviInputHint">輸入目的地名稱或在地圖上點選</string>
+    <string name="tvStartNavi">導航</string>
+    <string name="tvCalcRoutes">路徑</string>
+    <string name="tvStrategy">策略</string>
+    <string name="SetStrategy">設置策略</string>
+    <string name="STR_AVOID_JAM">躲避擁堵</string>
+    <string name="STR_TIME_FIRST">時間優先</string>
+    <string name="STR_DIS_FIRST">最短距離</string>
+    <string name="STR_FEE_FIRST">較少費用</string>
+    
+</resources>

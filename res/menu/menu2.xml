@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.iparking.MainActivity" >
+
+	<item  
+        android:id="@+id/action_edit1"   
+        app:showAsAction="always"
+        android:title="类型:"/>  
+	<item  
+        android:id="@+id/action_park"   
+        app:showAsAction="never"
+        android:title="停车场"/> 
+	<item  
+        android:id="@+id/action_hotel"   
+        app:showAsAction="never"
+        android:title="酒店"/>  
+
+</menu>

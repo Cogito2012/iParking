@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- weather.xml部分 -->
+    <string name="btn">GetWeather</string>
+    <color name="white">#FFFFFF</color>
+    <string name="inputcity">Input City Name</string>
+    
+    <!-- 设置以及SOS一键报警部分 -->
+    <string name="setChoice">Setting Choice</string>
+    <string name="language">Language</string>
+    <string name="sosNumber">SOS Number</string>
+    <string name="selfDefine">Self-Define</string>
+    <string name="strOK">OK</string>
+    <string name="strcancel">Cancel</string>
+    
+    <!-- 语言设置 -->
+    <string name="SimplifiedChinese">SimplifiedChinese</string>
+    <string name="TraditionalChinese">TraditionalChinese</string>
+    <string name="English">English</string>
+    <string name="Arabic">Arabic</string>
+    
+    <!-- 登陆注册 -->
+    <string name="logon_label_username">Account</string>  
+    <string name="logon_label_password">Password</string>  
+    <string name="login_label_username">Account</string>  
+    <string name="login_label_password">Password</string>  
+    <string name="login_label_signin">SignIn</string> 
+    <string name="login_label_ok">OK</string> 
+    <string name="login_username_hint">Email/Telphone</string>  
+    <string name="login_passwords_hint">Length of at least 6</string>  
+    <string name="logon_label_licenseplate">License Plate</string>  
+    <string name="login_licenseplate_hint">鄂AUB888 .etc</string>  
+    
+    <string name="login_register_link">No Account <a href="#" mce_href="#">Register</a></string>
+    <string name="Remember">Remember</string>
+    <string name="register">Register</string>    
+    <string name="PasswordsOK">Password Ack</string>
+    <string name="primary_path">/sdcard/iParking/</string>
+    <string name="user_path">/sdcard/iParking/USER/</string>
+    <string name="NAME_path">/sdcard/iParking/USER/USER_NAME.txt</string>
+    <string name="PASS_path">/sdcard/iParking/USER/USER_PASS.txt</string>
+    
+    <!-- 个人主页 -->
+    <string name="title_bar_txt">Personal Info</string>
+    <string name="imgHead">Head</string>
+    <string name="back">Back</string>
+    <string name="nickname">Nickname:whuRSSR</string>
+    <string name="region">Region</string>
+    <string name="wuhan">Wuhan</string>
+    <string name="signature">Signature</string>
+    <string name="content">The world is so big, I want to see</string>
+    <string name="carplate">Carplate</string>
+    <string name="mycarplate">鄂AUB888</string>
+    <string name="alipay">Alipay</string>
+    <string name="myalipay">Ahaha</string>
+    <string name="telephone">Telephone</string>
+    <string name="phonenumber">13554051841</string>
+    <string name="mygallery">Gallery</string>
+    <string name="dispose">Dispose</string>
+    
+    <string name="title_bar_deteil">Detail</string>
+    <string name="outsceen">Outsceen</string>
+    <string name="reserve">Reserve</string>
+    <string name="gothere">Navigate</string>
+    
+    <string name="DestName">Destinate：</string>
+    <string name="NaviInputHint">Enter destination name or select a point on map</string>
+    <string name="tvStartNavi">Navigate</string>
+    <string name="tvCalcRoutes">Routes</string>
+    <string name="tvStrategy">Strategy</string>
+    <string name="SetStrategy">Strategy Setting</string>
+    <string name="STR_AVOID_JAM">Avoid congestion</string>
+    <string name="STR_TIME_FIRST">Time priority</string>
+    <string name="STR_DIS_FIRST">Shortest distance</string>
+    <string name="STR_FEE_FIRST">Less expense</string>
+    
+</resources>

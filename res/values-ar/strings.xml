@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- weather.xml部分 -->
+    <string name="btn"> الحصول على  الطقس </string>
+    <color name="white">#FFFFFF</color>
+    <string name="inputcity"> الرجاء إدخال  اسم المدينة</string>
+    
+    <!-- 设置以及SOS一键报警部分 -->
+    <string name="setChoice"> اختر إعدادات</string>
+    <string name="language"> إعدادات اللغة</string>
+    <string name="sosNumber"> استغاثة  رقم</string>
+    <string name="selfDefine"> رقم مخصص</string>
+    <string name="strOK"> تحديد</string>
+    <string name="strcancel"> إلغاء </string>
+    
+    <!-- 语言设置 -->
+    <string name="SimplifiedChinese">الصينية المبسطة</string>
+    <string name="TraditionalChinese"> الصينية التقليدية </string>
+    <string name="English">الإنجليزية </string>
+    <string name="Arabic"> بالعربية </string>
+    
+    <!-- 登陆注册 -->
+    <string name="logon_label_username">رقم الحساب </string>  
+    <string name="logon_label_password">كلمة السر</string>  
+    <string name="login_label_username">قم الحساب </string>  
+    <string name="login_label_password">كلمة السر</string>  
+    <string name="login_label_signin">تسجيل </string> 
+    <string name="login_label_ok"> تأكيد </string> 
+    <string name="login_username_hint">البريد الإلكتروني/رقم الجوال </string>  
+    <string name="login_passwords_hint">طول ما لا يقل عن ستة</string>  
+    <string name="logon_label_licenseplate"> رقم لوحة </string>  
+    <string name="login_licenseplate_hint">مثل:  AUB888  هوبى </string>  
+    
+    <string name="login_register_link"> لا  الحساب  ؟  <a href="#" mce_href="#">مسجلة </a></string>
+    <string name="Remember"> تذكر كلمة المرور</string>
+    <string name="register">مسجلة </string>    
+    <string name="PasswordsOK">تأكيد كلمة السر</string>
+    <string name="user_path">/sdcard/iParking/USER/</string>
+    <string name="NAME_path">/sdcard/iParking/USER/USER_NAME.txt</string>
+    <string name="PASS_path">/sdcard/iParking/USER/USER_PASS.txt</string>
+    
+    <!-- 个人主页 -->
+    <string name="title_bar_txt"> المعلومات الشخصية </string>
+    <string name="imgHead"> إعدادات  الصورة </string>
+    <string name="back"> العودة </string>
+    <string name="nickname"> الاسم المستعار:  whuRSSR </string>
+    <string name="region"> موقع </string>
+    <string name="wuhan"> مدينة ووهان </string>
+    <string name="signature"> شخصية التوقيع </string>
+    <string name="content"> هذا العالم الكبير،  أريد أن أرى</string>
+    <string name="carplate"> رقم لوحة </string>
+    <string name="mycarplate">AUB888  هوبى </string>
+    <string name="alipay"> ملزمة  Alipay</string>
+    <string name="myalipay">ahaha</string>
+    <string name="telephone"> الهاتف المحمول</string>
+    <string name="phonenumber">13554051841</string>
+    <string name="mygallery"> صور  رحلة </string>
+    <string name="dispose"> شطب </string>
+    
+    <string name="title_bar_deteil"> تفاصيل </string>
+    <string name="outsceen"> موقع </string>
+    <string name="reserve"> حجز</string>
+    <string name="gothere"> الملاحة </string>
+    
+    <string name="DestName"> الوجهة: </string>
+    <string name="NaviInputHint"> أدخل  اسم الوجهة  أو  النقر  على الخريطة </string>
+    <string name="tvStartNavi"> الملاحة </string>
+    <string name="tvCalcRoutes"> مسار </string>
+    <string name="tvStrategy"> استراتيجية </string>
+    <string name="SetStrategy">وضع سياسة </string>
+    <string name="STR_AVOID_JAM"> تجنب  الازدحام </string>
+    <string name="STR_TIME_FIRST"> الأولوية في الوقت </string>
+    <string name="STR_DIS_FIRST"> أقصر مسافة </string>
+    <string name="STR_FEE_FIRST"> أقل  التكاليف </string>
+    
+</resources>

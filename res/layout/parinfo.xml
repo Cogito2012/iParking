@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/hehe"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_bar_deteil"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_back" />
+
+        <Button
+            android:id="@+id/btnMap"
+            android:layout_width="40dip"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/title_bar"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/mapbutton1" />
+
+    </RelativeLayout>
+
+    <!-- 信息列表 -->
+
+    <RelativeLayout
+        android:id="@+id/switch_face_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/item_edit_bg"
+        android:padding="5dip" >
+
+        <!-- 停车场名称 -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ratingBar1"
+            android:layout_alignParentTop="true"
+            android:text="werewr"
+            android:textSize="25sp" />
+        
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvName"
+            android:layout_centerHorizontal="true"
+            android:stepSize="1"
+            android:rating="3"
+            android:isIndicator="true" />
+        <!-- 收费情况 -->
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ratingBar1"
+            android:layout_below="@+id/ratingBar1"
+            android:text="23123"
+            android:textSize="20sp" />
+        
+        <!-- 剩余车位 -->
+        <TextView
+            android:id="@+id/tvRemain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tvPrice"
+            android:layout_below="@+id/tvPrice"
+            android:text="czcxzc"
+            android:textSize="20sp" />
+
+        <!-- 三个按钮 -->
+	    <RelativeLayout
+	        android:id="@+id/thebuttons1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="35dp"
+	        android:layout_below="@+id/tvRemain"
+	        android:layout_marginBottom="10dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp" >
+	
+	        <LinearLayout
+	            android:id="@+id/linearLayout1"
+	            android:layout_width="fill_parent"
+	            android:layout_height="40dp"
+	            android:background="@drawable/background_layout_bottom"
+	            android:orientation="horizontal" >
+	
+	            <!-- 停车场外景 -->
+	            <RelativeLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_marginBottom="1dp"
+	                android:layout_marginLeft="1dp"
+	                android:layout_marginTop="1dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/background_button_l"
+	                android:clickable="true"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:id="@+id/btnOutsceen"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/outsceen" />
+	            </RelativeLayout>
+	
+	            <ImageView
+	                android:layout_width="1dp"
+	                android:layout_height="fill_parent"
+	                android:src="@drawable/line" />
+	
+	            <!-- 车位预订 -->
+	            <RelativeLayout
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_marginBottom="1dp"
+	                android:layout_marginTop="1dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/background_button_c"
+	                android:clickable="true"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                	android:id="@+id/btnReserve"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/reserve" />
+            	</RelativeLayout>
+
+	            <ImageView
+	                android:layout_width="1dp"
+	                android:layout_height="fill_parent"
+	                android:src="@drawable/line" />
+            
+	            <!-- 到这儿去 -->
+	            <RelativeLayout
+	                android:id="@+id/button_layer"
+	                android:layout_width="wrap_content"
+	                android:layout_height="fill_parent"
+	                android:layout_marginBottom="1dp"
+	                android:layout_marginRight="1dp"
+	                android:layout_marginTop="1dp"
+	                android:layout_weight="1"
+	                android:background="@drawable/background_button_r"
+	                android:clickable="true"
+	                android:orientation="horizontal" >
+	
+	                <TextView
+	                    android:id="@+id/btnGothere"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_centerHorizontal="true"
+	                    android:layout_centerVertical="true"
+	                    android:text="@string/gothere" />
+	            </RelativeLayout>
+	        </LinearLayout>
+	    </RelativeLayout>
+
+    </RelativeLayout>
+    
+    <ImageView 
+        android:id="@+id/outsceen"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        />
+     
+</LinearLayout>

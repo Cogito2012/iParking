@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tmp_mainbg" >
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/navbg"
+        android:orientation="horizontal" >
+    
+	    <EditText
+	        android:id="@+id/cityname"
+	        android:layout_width="0dp"
+	        android:layout_height="wrap_content" 
+	        android:layout_weight="10"  
+	        android:textColor="@color/white"
+	        android:hint="@string/inputcity"/>
+
+	    <Button
+	        android:id="@+id/btn"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="0.1"  
+	        android:text="@string/btn"
+	        android:textColor="@color/white"
+	        android:textSize="20sp" />
+
+    </LinearLayout>
+     
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/LinearLayout1"
+        android:background="@drawable/content_bg"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical">
+    
+	    <LinearLayout
+	        android:id="@+id/myLinearLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_marginLeft="5sp"
+		    android:layout_marginRight="5sp"
+	        android:orientation="vertical">
+	
+	    </LinearLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/LinearLayout2"
+        android:background="@drawable/content_bg"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:orientation="vertical">
+    
+	    <LinearLayout
+	        android:id="@+id/tipsLayout"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:orientation="vertical">
+	
+	        <!-- 
+		    <TextView
+		        android:id="@+id/tvTips"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#ffffff"
+		        android:textSize="20sp"
+		        android:focusable ="true"    
+				android:singleLine="true"  
+				android:ellipsize="marquee"  
+				android:marqueeRepeatLimit="marquee_forever"   
+				android:focusableInTouchMode="true"  
+				android:scrollHorizontally="true"/>
+	 -->
+		    <com.example.iparking.VerticalScrollTextView
+		        android:id="@+id/sctvTips"
+			    android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:textColor="#ffffff"
+		        android:textSize="20sp"
+		        android:layout_marginLeft="5sp"
+		        android:layout_marginRight="5sp"
+	            android:text="hehehehehhe"/>  
+			 
+		    <!-- 
+		    <com.example.iparking.AutoScrollTextView
+			    android:id="@+id/TextViewNotice"
+			    android:layout_height="30dp"
+			    android:layout_width="fill_parent"
+		        android:textColor="#ffffff"
+		        android:textSize="20sp">
+			</com.example.iparking.AutoScrollTextView>
+			 -->
+			 
+			 
+	    </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

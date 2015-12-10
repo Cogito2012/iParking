@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    
+    <fragment
+			    android:name="com.example.iparking.POIListFragment"
+			    android:id="@+id/POIList_Fragment"
+			    android:layout_width="match_parent" 
+			    android:layout_height="wrap_content" 
+			  />
+    
+   		<RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="50dp"
+   			android:background="#dddddd"
+	        android:layout_alignParentBottom="true">
+
+   			<Button
+   			    android:id="@+id/sync_button"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerInParent="true"
+   			    android:layout_alignParentLeft="true"
+   			    android:layout_margin="5dp"
+   			    android:background="#ffffff"
+   			    android:text="同步" />
+   			<Button
+   			    android:id="@+id/check_button"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerInParent="true"
+   			    android:layout_margin="5dp"
+   			    android:background="#ffffff"
+   			    android:text="全选" />
+   			<Button
+   			    android:id="@+id/del_button"
+   			    android:layout_width="wrap_content"
+   			    android:layout_height="wrap_content"
+   			    android:layout_centerInParent="true"
+   			    android:layout_alignParentRight="true"
+   			    android:layout_margin="5dp"
+   			    android:background="#ffffff"
+   			    android:text="删除" />
+   		    
+	   	</RelativeLayout>
+	    
+    </RelativeLayout>	    
+
+</LinearLayout>

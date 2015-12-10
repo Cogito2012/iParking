@@ -1,0 +1,273 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#F3F1DA"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+  		android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/hehe"
+        android:gravity="center_vertical">
+           		
+        <Button
+           	android:id="@+id/login_reback_btn"
+           	android:layout_width="70dp"
+           	android:layout_height="wrap_content"
+           	android:layout_centerVertical="true"
+           	android:textSize="14sp"
+           	android:textColor="#fff"
+            android:background="@drawable/title_btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/title_bar_txt"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+   
+     
+    <!-- image switch -->
+
+    <RelativeLayout
+        android:id="@+id/switch_face_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:background="@drawable/btn_picture"
+        android:padding="5dip" >
+         
+        <ImageView
+	        android:layout_width="82.0dip"
+	        android:layout_height="82.0dip"
+	        android:layout_centerInParent="true"
+	        android:contentDescription="@null"
+	        android:src="@drawable/me_head_bg" />
+
+	    <com.example.iparking.utils.CircularImage
+	        android:id="@+id/face"
+	        android:layout_width="74.0dip"
+	        android:layout_height="74.0dip"
+	        android:layout_centerInParent="true" />
+    
+        <TextView
+            android:id="@+id/tv_Name"
+            android:layout_width="wrap_content" 
+        	android:layout_height="wrap_content"
+        	android:layout_below="@+id/face"
+        	android:layout_centerInParent="true"
+            android:text="@string/imgHead"
+            android:textSize="18sp"		
+            android:textColor="@android:color/black" />
+
+        
+    </RelativeLayout>
+    
+    <!-- List Detail -->
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_marginBottom="20dp"
+         android:layout_marginTop="3dp" >
+
+      	<RelativeLayout      				    
+         	android:layout_width="fill_parent"
+         	android:layout_height="wrap_content"            	
+         	android:gravity="center_vertical"
+         	android:clickable="true"
+         	android:background="@drawable/preference_first_item" >
+         	<!-- 城市名 -->
+         	<TextView
+         	    android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:padding="8dp" 
+     			android:text="@string/region"
+     			android:textSize="17sp"	
+     			android:textColor="#333" />
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:layout_alignParentLeft="true"
+     			android:layout_marginLeft="100dp"
+     			android:padding="8dp" 
+     			android:text="@string/wuhan"
+     			android:textSize="15sp"	
+     			android:textColor="#000" />
+      	</RelativeLayout>
+      	
+	  	<RelativeLayout
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:gravity="center_vertical"
+       		android:clickable="true"
+       		android:background="@drawable/preference_item" >
+         	<!-- 个性签名 -->
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:padding="8dp" 
+     			android:text="@string/signature"
+     			android:textSize="17sp"		
+		        android:textColor="#333" /> 
+	        <TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:layout_alignParentLeft="true"
+     			android:layout_marginLeft="100dp"
+     			android:padding="8dp" 
+     			android:text="@string/content"
+     			android:textSize="15sp"		
+		        android:textColor="#000" />
+	  	</RelativeLayout>
+	  	
+   		<RelativeLayout
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:gravity="center_vertical"
+       		android:clickable="true"
+       		android:background="@drawable/preference_item" >
+	        <!-- 电话号码 -->
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:padding="8dp" 
+     			android:text="@string/telephone"
+     			android:textSize="17sp"		
+		        android:textColor="#333" />
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:layout_alignParentLeft="true"
+     			android:layout_marginLeft="100dp"
+     			android:padding="8dp" 
+     			android:text="@string/phonenumber"
+     			android:textSize="15sp"		
+		        android:textColor="#000" /> 			
+   		</RelativeLayout>
+   		<RelativeLayout
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:gravity="center_vertical"
+       		android:clickable="true"
+       		android:background="@drawable/preference_item" >
+	        <!-- 车牌号 -->
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:padding="8dp" 
+     			android:text="@string/carplate"
+     			android:textSize="17sp"		
+		        android:textColor="#333" />
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:layout_alignParentLeft="true"
+     			android:layout_marginLeft="100dp"
+     			android:padding="8dp" 
+     			android:text="@string/mycarplate"
+     			android:textSize="15sp"		
+		        android:textColor="#000" /> 			
+   		</RelativeLayout>
+   		<RelativeLayout
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:gravity="center_vertical"
+       		android:clickable="true"
+       		android:background="@drawable/preference_item" >
+	        <!-- 绑定支付宝 -->
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:padding="8dp" 
+     			android:text="@string/alipay"
+     			android:textSize="17sp"		
+		        android:textColor="#333" />
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:layout_alignParentLeft="true"
+     			android:layout_marginLeft="100dp"
+     			android:padding="8dp" 
+     			android:text="@string/myalipay"
+     			android:textSize="15sp"		
+		        android:textColor="#000" /> 			
+   		</RelativeLayout>
+   		<RelativeLayout
+       		android:layout_width="fill_parent"
+       		android:layout_height="wrap_content"
+       		android:gravity="center_vertical"
+       		android:clickable="true"
+       		android:background="@drawable/preference_last_item" >
+         	<!-- 相册 -->
+         	<TextView
+     			android:layout_width="wrap_content" 
+     			android:layout_height="wrap_content"
+     			android:layout_centerVertical="true"
+     			android:padding="8dp" 
+     			android:text="@string/mygallery"
+     			android:textSize="17sp"		
+		        android:textColor="#333" />
+         	<ImageView
+         	    android:id="@+id/whu1"
+   		    	android:layout_width="wrap_content"
+     			android:layout_height="wrap_content"        	     	
+     			android:scaleType="matrix"
+     			android:layout_centerVertical="true"
+     			android:layout_alignParentLeft="true"
+     			android:layout_marginLeft="100dp"
+     			android:padding="8dp"
+     			android:src="@drawable/whu1" />  
+     		<ImageView
+   		    	android:layout_width="wrap_content"
+     			android:layout_height="wrap_content"        	     	
+     			android:scaleType="matrix"
+     			android:layout_centerVertical="true"
+     			android:layout_toRightOf="@id/whu1"
+     			android:layout_marginLeft="0dp"
+     			android:padding="8dp"
+     			android:src="@drawable/whu2" />  	
+     			
+     		<ImageView
+           		android:layout_width="wrap_content"
+       			android:layout_height="wrap_content"        	     	
+       			android:scaleType="matrix"
+       			android:layout_centerVertical="true"
+       			android:layout_alignParentRight="true"
+       			android:clickable="true"
+       			android:src="@drawable/mm_submenu" />	
+   		</RelativeLayout>
+     </LinearLayout>
+     
+     <!-- 注销 -->
+     <Button  
+         android:id="@+id/Logout"          
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"            
+		android:background="@drawable/btn_style_green"            
+		android:layout_marginTop="14dp"
+		android:layout_marginBottom="14dp"
+		android:layout_margin="10dp"
+		android:layout_marginRight="10dp"
+		android:text="@string/dispose"
+		android:textColor="#fff"
+		android:textSize="18sp" />
+     
+</LinearLayout>

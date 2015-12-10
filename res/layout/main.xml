@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical" 
+	android:background="#ffffff">
+    
+    <!-- 标题 -->
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+        <RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="#0a457d" >
+		    <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:layout_margin="10dp"
+				android:gravity="center_vertical"
+				android:text="@string/app_name"
+				android:textColor="#fff"
+				android:textSize="32sp" />
+        </RelativeLayout>
+    </LinearLayout>
+    
+    <!-- 信息展示 
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+	    android:orientation="vertical" >
+        <RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center_vertical"
+			android:background="@drawable/btn_picture" >
+		    <TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerHorizontal="true"
+				android:layout_centerVertical="true"
+				android:layout_margin="10dp"
+				android:gravity="center_vertical"/>
+        </RelativeLayout>
+    </LinearLayout>
+    -->
+    <LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:orientation="horizontal" >
+	    <LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+	        android:layout_weight="1"
+		    android:orientation="vertical" >
+            <!-- 地图 -->
+            <LinearLayout
+	            android:id="@+id/button_place"
+	            android:layout_width="fill_parent"
+	            android:layout_height="fill_parent"
+	            android:scaleType="fitXY"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginRight="5dp"
+	            android:layout_marginTop="10dp"
+	            android:clickable="true"
+	            android:background="@drawable/mapbutton_style"
+	            android:layout_weight="1"
+		        android:orientation="vertical" >
+
+				<ImageView
+				    android:id="@+id/imageView1"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:scaleType="fitXY"
+				    android:layout_weight="97"
+				    android:src="@drawable/mapbutton1" />
+              
+				<ImageView
+				    android:id="@+id/imageView2"
+				    android:layout_width="fill_parent"
+				    android:layout_height="fill_parent"
+				    android:scaleType="fitXY"
+				    android:layout_weight="123"
+				    android:src="@drawable/mapbutton_cn" />
+            </LinearLayout>
+			<!-- 导航 -->
+			<ImageButton
+			    android:id="@+id/button_navigate"
+			    android:layout_weight="1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_marginLeft="10dp"
+			    android:layout_marginRight="5dp"
+			    android:layout_marginTop="10dp"
+			    android:layout_marginBottom="10dp"
+			    android:scaleType="fitXY"
+			    android:src="@drawable/navibutton" 
+			    android:background="@drawable/navibutton_style"/>
+			</LinearLayout>
+                
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_weight="1"
+				android:orientation="vertical" >
+				<!-- 收藏 -->
+                <ImageButton
+                    android:id="@+id/button_poi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="4"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/collectbutton"
+                    android:background="@drawable/collectbutton_style"  />
+				<!-- 天气 -->
+                <ImageButton
+                    android:id="@+id/button_weather"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="5"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/weatherbutton"
+                    android:background="@drawable/weatherbutton_style" />
+
+                    <LinearLayout
+					    android:layout_width="fill_parent"
+					    android:layout_height="fill_parent"
+				        android:layout_weight="5"
+					    android:orientation="vertical" >
+					    
+                        <LinearLayout
+						    android:layout_width="fill_parent"
+						    android:layout_height="fill_parent"
+					        android:layout_weight="1"
+						    android:orientation="horizontal" >
+					    	<!-- 个人主页 -->
+                            <ImageButton
+					            android:id="@+id/personalpage"
+					            android:layout_width="fill_parent"
+					            android:layout_height="fill_parent"
+					            android:layout_weight="1"
+					            android:layout_marginRight="5dp"
+					   		    android:layout_marginLeft="5dp"
+					            android:layout_marginTop="10dp"
+					            android:src="@drawable/userbutton" 
+					            android:scaleType="fitXY"
+					            android:background="@drawable/button_style"/>
+                         	<!-- 上传下载 -->
+                            <ImageButton
+				                android:id="@+id/downloadmap"
+				                android:layout_width="fill_parent"
+				                android:layout_height="fill_parent"
+				                android:layout_weight="1"
+				                android:layout_marginRight="10dp"
+				                android:layout_marginTop="10dp"
+				                android:src="@drawable/upanddownbutton" 
+				                android:scaleType="fitXY"
+                                android:background="@drawable/button_style" />
+                      </LinearLayout>
+                      <LinearLayout
+							android:layout_width="fill_parent"
+							android:layout_height="fill_parent"
+							android:layout_weight="1"
+							android:orientation="horizontal" >
+                            <!-- 设置 -->
+                            <ImageButton
+	                            android:id="@+id/button_set"    
+				                android:layout_width="fill_parent"
+				                android:layout_height="fill_parent"
+				                android:layout_weight="1"
+				                android:layout_marginRight="5dp"
+	                    		android:layout_marginLeft="5dp"
+				                android:layout_marginTop="5dp"
+			                    android:layout_marginBottom="10dp"
+				                android:scaleType="fitXY"
+				                android:src="@drawable/settingbutton" 
+	                            android:background="@drawable/button_style"/>
+                            <!-- SOS报警 -->
+                         	<ImageButton
+				                android:id="@+id/button_sos"	
+				                android:layout_width="fill_parent"
+				                android:layout_height="fill_parent"
+				                android:layout_weight="1"
+				                android:layout_marginRight="10dp"
+				                android:layout_marginTop="5dp"
+				                android:layout_marginBottom="10dp"
+				                android:scaleType="fitXY"
+				                android:src="@drawable/sosbutton"
+	                            android:background="@drawable/button_style" />
+                      </LinearLayout>
+                 </LinearLayout>
+             </LinearLayout>
+         </LinearLayout>
+
+</LinearLayout>

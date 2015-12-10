@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"  
+    android:background="#17a0d7" >
+    
+     <!-- padding 内边距   layout_margin 外边距   
+                  android:layout_alignParentTop 布局的位置是否处于顶部 -->  
+  <RelativeLayout  
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical" >
+            
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true">
+          
+      <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical" >
+               <LinearLayout
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="horizontal">"
+		      <!-- 车牌号 -->   
+		          <TextView
+                       android:id="@+id/login_licenseplate_input"
+                       style="@style/normalText"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginRight="10dp"
+                       android:text="@string/logon_label_licenseplate" />
+
+                   <EditText
+                       android:id="@+id/licenseplate_edit"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/login_licenseplate_hint"
+                       android:inputType="text"
+                       android:singleLine="true" />
+             </LinearLayout> 
+               <LinearLayout
+	               android:layout_width="fill_parent"
+	               android:layout_height="wrap_content"
+	               android:orientation="horizontal">"
+		      <!-- 账号 -->   
+		          <TextView
+                       android:id="@+id/login_user_input"
+                       style="@style/normalText"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="3dp"  
+                       android:layout_marginRight="10dp"
+                       android:text="@string/logon_label_username" />
+
+                   <EditText
+                       android:id="@+id/username_edit"
+                       android:layout_width="fill_parent"
+                       android:layout_height="wrap_content"
+                       android:hint="@string/login_username_hint"
+                       android:inputType="text"
+                       android:singleLine="true" />
+             </LinearLayout> 
+             <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal" >
+		        <!-- 密码 text -->  
+		        <TextView  
+		            android:id="@+id/login_password_input"  
+		            android:layout_width="wrap_content"  
+		            android:layout_height="wrap_content"  
+		            android:layout_below="@id/username_edit"  
+		            android:layout_marginTop="3dp"  
+                    android:layout_marginRight="10dp"
+		            android:text="@string/logon_label_password"  
+		            style="@style/normalText"/>  
+		        <EditText  
+		            android:id="@+id/password_edit"  
+		            android:layout_width="fill_parent"  
+		            android:layout_height="wrap_content"  
+		            android:layout_below="@id/login_password_input"  
+		            android:password="true"  
+		            android:singleLine="true"  
+		            android:hint="@string/login_passwords_hint"
+		            android:inputType="textPassword"   />
+    
+             </LinearLayout> 
+             <LinearLayout
+               android:layout_width="fill_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal" >
+				    <!-- 确定密码 text -->  
+				    <TextView  
+				            android:id="@+id/login_password_input2"  
+				            android:layout_width="wrap_content"  
+				            android:layout_height="wrap_content"  
+				            android:layout_below="@id/password_edit"  
+				            android:layout_marginTop="3dp" 
+                            android:layout_marginRight="10dp" 
+				            android:text="@string/PasswordsOK"  
+				            style="@style/normalText"/>  
+				    <EditText  
+				            android:id="@+id/password_edit2"  
+				            android:layout_width="fill_parent"  
+				            android:layout_height="wrap_content"  
+				            android:layout_below="@id/login_password_input2"  
+				            android:password="true"  
+				            android:singleLine="true"  
+				            android:inputType="textPassword" />
+             </LinearLayout> 
+     <!-- 确定button -->
+
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/background_login_button"
+        android:text="@string/strOK" />
+    
+        </LinearLayout>
+    </RelativeLayout>
+  </RelativeLayout>
+   <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="3"
+        android:orientation="horizontal" >
+      </RelativeLayout>
+    
+
+</LinearLayout>
